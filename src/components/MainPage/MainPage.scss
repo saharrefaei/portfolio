@@ -1,0 +1,119 @@
+.MainPage {
+  height: calc(100vh - 100px);
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  .wrapper {
+    max-width: 1000px;
+    margin: auto;
+    height: 100%;
+  }
+  .textCountainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    h2 {
+      font-size: 30px;
+      color: rebeccapurple;
+      letter-spacing: 10px;
+    }
+    h1 {
+      font-size: 88px;
+      color: white;
+    }
+    .buttons {
+      button {
+        padding: 20px;
+        border: 1px solid white;
+        border-radius: 10px;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        font-size: 15px;
+      }
+    }
+    .scroll {
+      position: relative;
+      display: block;
+      font-size: 0.933rem;
+      color: rgba(255, 255, 255, 1);
+      text-decoration: none;
+      padding: 10px 10px 10px 40px;
+      &::before {
+        display: block;
+        position: absolute;
+        top: -2px;
+        left: 0;
+        width: 24px;
+        height: 40px;
+        border: 2px solid rgba(255, 255, 255, 1);
+        border-radius: 12px;
+        content: "";
+      }
+      &::after {
+        display: block;
+        position: absolute;
+        top: 9px;
+        left: 11px;
+        width: 2px;
+        height: 8px;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 1px;
+        content: "";
+        animation-name: scroll;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+      }
+    }
+
+    @keyframes scroll {
+      0% {
+        opacity: 1;
+        height: 8px;
+      }
+      20% {
+        opacity: 1;
+        height: 8px;
+      }
+      30% {
+        transform: translateY(0);
+        opacity: 1;
+        height: 19px;
+      }
+      40% {
+        opacity: 1;
+      }
+      80% {
+        transform: translateY(19px);
+        opacity: 0;
+        height: 0;
+      }
+      81% {
+        transform: translateY(0);
+        opacity: 0;
+        height: 8px;
+      }
+      100% {
+        opacity: 1;
+        height: 8px;
+      }
+    }
+  }
+  .slidingtext {
+    position: absolute;
+    font-size: 50vh;
+    bottom: -10px;
+    white-space: nowrap;
+    color: #ffffff09;
+    width: 50%;
+    font-weight: bold;
+  }
+  .imageCounainer {
+    overflow: hidden;
+    height: 100%;
+    position: absolute;
+    top: 150px;
+    right: 50px;
+  }
+}
