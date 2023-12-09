@@ -2,9 +2,11 @@ import "./Navbar.scss";
 import linkedin from "../../images/linkedin.png";
 import Github from "../../images/github.png";
 import { motion } from "framer-motion";
+import SideBar from "../SideBar/Sidebar";
 export default function Navbar() {
   return (
     <div className="Navbar">
+      <SideBar/>
       <div className="wrapper">
         <motion.span
           initial={{ opacity: 0, scale: 0.5 }}
