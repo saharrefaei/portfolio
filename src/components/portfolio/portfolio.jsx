@@ -1,5 +1,5 @@
 import "./portfolio.scss";
-import { motion, useScroll,useSpring} from "framer-motion";
+import { motion, useScroll, useSpring,useTransform } from "framer-motion";
 import pic1 from "../../images/jackson-sophat-_t-l5FFH8VA-unsplash.jpg";
 import img2 from "../../images/michael-dziedzic-qDG7XKJLKbs-unsplash.jpg";
 import img3 from "../../images/pankaj-patel-6JVlSdgMacE-unsplash.jpg";
@@ -23,28 +23,55 @@ const items = [
     title: "React Dashboard",
     img: img3,
     decs: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
+  }
 ];
-const ref = useRef();
-
-const { scrollYProgress } = useScroll({
-    target: ref.current,
-    offset: ["end end", "start  start"],
-  });
-
-const EachItem = ({ item }) => {
-  return <section>{item.title}</section>;
-};
 
 const Portfolio = () => {
-  return (
-    <div className="portfolio">
-        <div className="progress">
-            <h1>my least project</h1>
-            <div className="progressbar">
+  const ref = useRef();
 
+  const { scrollYProgress } = useScroll({
+    target: ref.current,
+    offset: ["end end", "start start"],
+  });
+
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+  });
+
+  const EachItem = ({ item }) => {
+    const ref = useRef();
+    const { scrollYProgress } = useScroll({
+      target: ref.current,
+      // offset: ["end end", "start start"],
+    });
+
+    const y = useTransform(scrollYProgress, [0, 1], [-50,200]);
+
+    return (
+      <section >
+        <div className="countiner">
+          <div className="wrapper">
+          <div className="imgCountainer" ref={ref}> 
+            <img src={item.img} alt={item.title} />
             </div>
+            <motion.div className="textCountainer" style={{ y }}>
+              <h2>{item.title}</h2>
+              <p>{item.decs}</p>
+              <button>see on Github</button>
+            </motion.div>
+          </div>
         </div>
+      </section>
+    );
+  };
+
+  return (
+    <div className="portfolio" ref={ref}>
+      <div className="progress">
+        <h1>my least project</h1>
+        <motion.div style={{ scaleX }} className="progressbar"></motion.div>
+      </div>
       {items.map((item) => (
         <EachItem item={item} key={item.id} />
       ))}
@@ -52,4 +79,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio; 
+export default Portfolio;

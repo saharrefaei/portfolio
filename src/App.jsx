@@ -14,13 +14,12 @@ export default function App() {
       <section id="Services">
         <Parallax type="Services" />
       </section>
+
       <section id="Portfolio">
         <Portfolio />
       </section>
 
-      <section id="contact">
-        <a href="contact"> acontact</a>
-      </section>
+   
     </div>
   );
 }
