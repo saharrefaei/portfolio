@@ -26,36 +26,24 @@ const items = [
   }
 ];
 
-const Portfolio = () => {
-  const ref = useRef();
-
-  const { scrollYProgress } = useScroll({
-    target: ref.current,
-    offset: ["end end", "start start"],
-  });
-
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-  });
 
   const EachItem = ({ item }) => {
     const ref = useRef();
+
     const { scrollYProgress } = useScroll({
-      target: ref.current,
-      // offset: ["end end", "start start"],
+      target: ref,
     });
 
-    const y = useTransform(scrollYProgress, [0, 1], [-50,200]);
+    const y = useTransform(scrollYProgress, [0, 1], [-0,300]);
 
     return (
       <section >
         <div className="countiner">
           <div className="wrapper">
-          <div className="imgCountainer" ref={ref}> 
+          <motion.div className="imgCountainer" ref={ref}> 
             <img src={item.img} alt={item.title} />
-            </div>
-            <motion.div className="textCountainer" style={{ y }}>
+            </motion.div>
+            <motion.div className="textCountainer" style={{y: y }}>
               <h2>{item.title}</h2>
               <p>{item.decs}</p>
               <button>see on Github</button>
@@ -66,10 +54,22 @@ const Portfolio = () => {
     );
   };
 
+  const Portfolio = () => {
+    const ref = useRef();
+  
+    const { scrollYProgress } = useScroll({
+      target: ref.current,
+      offset: ["end end", "start start"],
+    });
+  
+    const scaleX = useSpring(scrollYProgress, {
+      stiffness: 100,
+      damping: 30,
+    });
   return (
     <div className="portfolio" ref={ref}>
       <div className="progress">
-        <h1>my least project</h1>
+        <h1>my last project</h1>
         <motion.div style={{ scaleX }} className="progressbar"></motion.div>
       </div>
       {items.map((item) => (
