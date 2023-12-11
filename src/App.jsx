@@ -5,6 +5,7 @@ import Parallax from "./components/parallax/parallax";
 import Portfolio from "./components/portfolio/portfolio";
 import ContactMe from "./components/contactMe/contactMe";
 import Cursor from "./components/cursor/cursor";
+import './fonts/CaviarDreams_Italic.ttf'
 export default function App() {
   return (
     <div>
