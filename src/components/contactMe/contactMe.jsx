@@ -55,9 +55,9 @@ export default function contactMe() {
           I can make your desiyer project
         </motion.h1>
         <motion.div className="item" variants={variants}>
-          <h2>
-            Email :<span> saharrefaei1999@gmail.com</span>
-          </h2>
+     
+            <span>Email : saharlady618@yahoo.com</span>
+        <p>write your message , i'll recievd it directly to my mail box</p>
         </motion.div>
         <div className="formContainer">
           <motion.div

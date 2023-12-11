@@ -8,7 +8,7 @@ import Cursor from "./components/cursor/cursor";
 export default function App() {
   return (
     <div>
-      <Cursor/>
+      <Cursor />
 
       <section id="Homepage">
         <Navbar />
@@ -18,10 +18,10 @@ export default function App() {
       <section id="Services">
         <Parallax type="Services" />
       </section>
-
-      <Portfolio />
-
-      <section id="ContactMe">
+      <div id="Portfolio">
+        <Portfolio />
+      </div>
+      <section id="contact">
         <ContactMe />
       </section>
     </div>

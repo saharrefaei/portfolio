@@ -11,8 +11,8 @@ export default function parallax({ type }) {
     offset: ["start start", "end start"],
   });
 
-  const ytext = useTransform(scrollYProgress, [0, 1], ["0%", "600%"]);
-  const yplannet = useTransform(scrollYProgress, [0, 1], ["0%", "90%"]);
+  const ytext = useTransform(scrollYProgress, [0, 1], ["0%", "1500%"]);
+  const yplannet = useTransform(scrollYProgress, [0, 1], ["0%", "190%"]);
   const ystarts = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
 
   return (

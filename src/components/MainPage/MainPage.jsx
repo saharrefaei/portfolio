@@ -40,12 +40,9 @@ export default function MainPage() {
         >
           <h2>Sahar Refaei Ghalibafan</h2>
           <h1>Web developer</h1>
-          <div className="buttons">
-            <button>contact me </button>
-          </div>
-          <a class="scroll" href="#">
-            Read more
-          </a>
+         
+          <a className="scroll" href="#Services">
+          Scroll down for more information</a>
           <img src="" />
         </motion.div>
       </div>

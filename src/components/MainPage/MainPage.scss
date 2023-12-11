@@ -5,6 +5,13 @@
     max-width: 1000px;
     margin: auto;
     height: 100%;
+    @media (max-width:724px) {
+      display: flex;
+      align-self: center;
+      justify-content: center;
+      padding-top: 25%;
+      margin-left: -18px;
+    }
   }
   .textCountainer {
     height: 100%;
@@ -12,6 +19,11 @@
     flex-direction: column;
     justify-content: center;
     gap: 40px;
+
+    @media (max-width:724px) {
+      height: 50%;
+      width: 50%;
+    }
     h2 {
       font-size: 30px;
       color: rebeccapurple;
@@ -20,25 +32,21 @@
     h1 {
       font-size: 88px;
       color: white;
+      
+    @media (max-width:724px) {
+      font-size: 26px;
+
     }
-    .buttons {
-      button {
-        padding: 20px;
-        border: 1px solid white;
-        border-radius: 10px;
-        background-color: transparent;
-        color: white;
-        cursor: pointer;
-        font-size: 15px;
-      }
     }
     .scroll {
+      white-space: nowrap;
       position: relative;
       display: block;
-      font-size: 0.933rem;
+      font-size: 0.60rem;
       color: rgba(255, 255, 255, 1);
       text-decoration: none;
       padding: 10px 10px 10px 40px;
+      cursor: pointer;
       &::before {
         display: block;
         position: absolute;
@@ -115,5 +123,8 @@
     position: absolute;
     top: 150px;
     right: 50px;
+    @media (max-width:724px) { 
+     display: none;
+    }
   }
 }
