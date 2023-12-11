@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Message from "../../images/chat-conversation-svgrepo-com.png";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+
 export default function contactMe() {
   const formRef = useRef();
   const [error, setError] = useState(false);
@@ -55,9 +56,9 @@ export default function contactMe() {
           I can make your desiyer project
         </motion.h1>
         <motion.div className="item" variants={variants}>
-     
-            <span>Email : saharlady618@yahoo.com</span>
-        <p>write your message , i'll recievd it directly to my mail box</p>
+ 
+   
+            <p>contact me by filling the following form</p>
         </motion.div>
         <div className="formContainer">
           <motion.div

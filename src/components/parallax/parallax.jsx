@@ -23,7 +23,7 @@ export default function parallax({ type }) {
         background: "linear-gradient(180deg,#111132,#c0c01d)",
       }}
     >
-      <motion.h1 style={{ y: ytext }}>what i did ?</motion.h1>
+      <motion.h1 style={{ y: ytext }}>what i have done?</motion.h1>
       <motion.div className="mountains"></motion.div>
       <motion.div
         className="palnets"

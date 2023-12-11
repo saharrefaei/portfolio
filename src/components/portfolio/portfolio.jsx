@@ -71,7 +71,7 @@ const items = [
   return (
     <div className="portfolio" ref={ref}>
       <div className="progress">
-        <h1>my last projects</h1>
+        <h1>my latest projects</h1>
         <motion.div style={{ scaleX }} className="progressbar"></motion.div>
       </div>
       {items.map((item) => (
