@@ -1,5 +1,5 @@
 import "./MainPage.scss";
-import Github from "../../images/github.png";
+import Github from "../../images/letter-s.png";
 import { motion } from "framer-motion";
 export default function MainPage() {
   const textvariants = {

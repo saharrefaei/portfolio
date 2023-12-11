@@ -41,6 +41,10 @@
       align-items: flex-start;
       justify-content: center;
       gap: 50px;
+      @media (min-width: 728px) and (max-width: 1402px) {
+        gap: 0px;
+
+      }
       @media (max-width:724px) {
         flex-direction: column;
         margin-top: 19%;
@@ -51,6 +55,10 @@
         overflow: hidden;
         width: 100%;
         margin-top: 5%;
+        @media (min-width: 728px) and (max-width: 1402px) {
+          padding-left: 6%;
+      
+             }
         @media (max-width:724px) {
           width: 100%;
           max-height: 300;
@@ -61,6 +69,7 @@
           height: 100%;
           object-fit: cover;
           border-radius: 10px;
+          
           @media (max-width:724px) {
             object-fit: contain;
             border-radius: 10px;
@@ -85,6 +94,10 @@
         h2 {
           font-size: 72px;
           margin-top: -20%;
+          height: 100%;
+          @media (min-width: 728px) and (max-width: 1402px) {
+           font-size: 40px;
+          }
           @media (max-width:724px) {
             font-size: 40px;
             margin-top: 0;

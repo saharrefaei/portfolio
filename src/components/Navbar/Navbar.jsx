@@ -20,15 +20,16 @@ export default function Navbar() {
            initial={{ opacity: 0, scale: 0.5 }}
            animate={{ opacity: 1, scale: 1 }}
            transition={{ duration: 0.5 }}
-         >
-            <img src={linkedin} alt="Linkedin" className="img" />
+         ><a href="https://www.linkedin.com/in/sahar-refaei-585830214">
+            <img src={linkedin} alt="Linkedin" className="img" /></a>
           </motion.a>
           <motion.a
            initial={{ opacity: 0, scale: 0.5 }}
            animate={{ opacity: 1, scale: 1 }}
            transition={{ duration: 0.5 }}
          >
-            <img src={Github} alt="GitHub" className="img" />
+          <a href="https://github.com/saharrefaei">
+            <img src={Github} alt="GitHub" className="img" /></a>
           </motion.a>
         </div>
       </div>

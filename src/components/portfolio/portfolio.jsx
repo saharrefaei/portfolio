@@ -1,28 +1,29 @@
 import "./portfolio.scss";
 import { motion, useScroll, useSpring,useTransform } from "framer-motion";
-import pic1 from "../../images/jackson-sophat-_t-l5FFH8VA-unsplash.jpg";
-import img2 from "../../images/michael-dziedzic-qDG7XKJLKbs-unsplash.jpg";
-import img3 from "../../images/pankaj-patel-6JVlSdgMacE-unsplash.jpg";
+import pic1 from "../../images/portfolio2.png";
+import img2 from "../../images/portfolio3.png";
+import img3 from "../../images/portfolio1.png";
 import { useRef } from "react";
 
 const items = [
   {
     id: 1,
-    title: "React Dashboard",
+    title: " controling services Dashboard",
     img: pic1,
-    decs: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    gitHub:"https://github.com/saharrefaei"
   },
   {
     id: 2,
-    title: "React Dashboard",
+    title: "Admin Dashboard",
     img: img2,
-    decs: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    gitHub: "https://github.com/saharrefaei/FirebaseDB",
+
   },
   {
     id: 3,
-    title: "React Dashboard",
+    title: "e-commerce website",
     img: img3,
-    decs: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    gitHub: "https://github.com/saharrefaei/CMS/tree/main/src/components",
   }
 ];
 
@@ -45,8 +46,9 @@ const items = [
             </motion.div>
             <motion.div className="textCountainer" style={{y: y }}>
               <h2>{item.title}</h2>
-              <p>{item.decs}</p>
-              <button>see on Github</button>
+              
+              <a href={item.gitHub}>
+              <button>see on Github</button></a>
             </motion.div>
           </div>
         </div>
@@ -69,7 +71,7 @@ const items = [
   return (
     <div className="portfolio" ref={ref}>
       <div className="progress">
-        <h1>my last project</h1>
+        <h1>my last projects</h1>
         <motion.div style={{ scaleX }} className="progressbar"></motion.div>
       </div>
       {items.map((item) => (
