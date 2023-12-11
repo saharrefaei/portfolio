@@ -5,7 +5,13 @@
     max-width: 1000px;
     margin: auto;
     height: 100%;
-    @media (max-width:724px) {
+    @media (min-width: 728px) and (max-width: 1402px) {
+      display: flex;
+      align-self: center;
+      justify-content: center;
+      margin-left: -18px;
+    }
+    @media (max-width: 724px) {
       display: flex;
       align-self: center;
       justify-content: center;
@@ -20,7 +26,7 @@
     justify-content: center;
     gap: 40px;
 
-    @media (max-width:724px) {
+    @media (max-width: 724px) {
       height: 50%;
       width: 50%;
     }
@@ -32,17 +38,16 @@
     h1 {
       font-size: 88px;
       color: white;
-      
-    @media (max-width:724px) {
-      font-size: 26px;
 
-    }
+      @media (max-width: 724px) {
+        font-size: 26px;
+      }
     }
     .scroll {
       white-space: nowrap;
       position: relative;
       display: block;
-      font-size: 0.60rem;
+      font-size: 0.6rem;
       color: rgba(255, 255, 255, 1);
       text-decoration: none;
       padding: 10px 10px 10px 40px;
@@ -123,8 +128,11 @@
     position: absolute;
     top: 150px;
     right: 50px;
-    @media (max-width:724px) { 
-     display: none;
+    @media (min-width: 728px) and (max-width: 1402px) {
+      display: none;
+    }
+    @media (max-width: 724px) {
+      display: none;
     }
   }
 }
