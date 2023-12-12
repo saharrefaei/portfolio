@@ -82,7 +82,7 @@ export default function contactMe() {
             <input type="text" required placeholder="Name" name="name" />
             <input type="email" required placeholder="Email" name="email" />
             <textarea id="" rows={4} placeholder="Message" name="message" />
-            <button>Send it to me </button>
+            <button> Send it to me </button>
             <motion.div
         className="imageCounainer"
         variants={variants}
