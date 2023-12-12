@@ -24,6 +24,18 @@ body {
   color: lightgray;
   overflow-x: hidden;}
 
+  .togglebutton{
+    display: flex;
+  align-content: center;
+  margin-left: 5.5rem;
+  margin-top: 1.3rem;
+  border: none;
+  border-radius: 50%;
+  padding: 13px;
+  width: 66px;
+  height: 61px;
+}
+  }
   a {
     text-decoration: none;
     color: inherit;
@@ -33,6 +45,3 @@ body {
     scroll-snap-align: center;
   }
  
-  
-
-}

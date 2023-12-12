@@ -1,7 +1,9 @@
+import React, { useState } from "react";
 import "./MainPage.scss";
 import Github from "../../images/letter-s.png";
 import { motion } from "framer-motion";
-export default function MainPage() {
+export default function MainPage({darkMode}) {
+
   const textvariants = {
     initial: {
       x: -500,
@@ -30,7 +32,10 @@ export default function MainPage() {
     },
   };
   return (
-    <div className="MainPage">
+    <div className="MainPage" style={{
+      background: darkMode ? 'linear-gradient(180deg, #e6c1ff, #ac40ef)' : 'linear-gradient(180deg, #0c0c1d, #111132)',
+      color: darkMode ? 'black' : 'lightgray'
+    }}>
       <div className="wrapper">
         <motion.div
           className="textCountainer"

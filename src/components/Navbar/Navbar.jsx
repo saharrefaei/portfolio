@@ -13,7 +13,7 @@ export default function Navbar() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-        warning ! Animations are not supported by Safari on iOS less than 13
+        Animations are not supported by Safari on iOS less than 13
         </motion.span>
         <div className="social">
           <motion.a
