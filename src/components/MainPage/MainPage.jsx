@@ -23,8 +23,8 @@ export default function MainPage() {
     animate: {
       x: "-220%",
       transition: {
-        repeat:Infinity,   
-        repeatType:"mirror",
+        repeat: Infinity,
+        repeatType: "mirror",
         duration: 16,
       },
     },
@@ -40,17 +40,29 @@ export default function MainPage() {
         >
           <h2>Sahar Refaei Ghalibafan</h2>
           <h1>Web developer</h1>
-         
+
           <a className="scroll" href="#Services">
-          Scroll down for more information</a>
+            Scroll down for more information
+          </a>
           <img src="" />
         </motion.div>
       </div>
-      <motion.div variants={slidervarient}  initial="initial"
-          animate="animate" className="slidingtext">web programmer</motion.div>
-      <div className="imageCounainer">
+      <motion.div
+        variants={slidervarient}
+        initial="initial"
+        animate="animate"
+        className="slidingtext"
+      >
+        web programmer
+      </motion.div>
+      <motion.div
+        className="imageCounainer"
+        variants={textvariants}
+        initial="initial"
+        animate="animate"
+      >
         <img src={Github} alt="me" />
-      </div>
+      </motion.div>
     </div>
   );
 }
