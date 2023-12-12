@@ -128,12 +128,25 @@
     height: 100%;
     position: absolute;
     top: 150px;
-    right: 50px;
-    @media (min-width: 728px) and (max-width: 1402px) {
-      display: none;
+    right: 50px; 
+     @media (min-width: 724px) and (max-width: 1402px) {
+      top: 30rem;
+      right: -10px; 
     }
     @media (max-width: 724px) {
-      display: none;
-    }
+      top: 32rem;
+      right: 35px; 
+}  
+    img{
+      @media (min-width: 724px) and (max-width: 1402px) {
+        height: 40%;
+        width: 76%;
+      }
+       @media (max-width: 724px) {
+            height: 32%;
+  width: 78%;
+    }  
+    }  
+ 
   }
 }

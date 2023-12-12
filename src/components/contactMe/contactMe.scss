@@ -24,15 +24,15 @@
       align-items: center;
       padding-top: 70px;
     }
-.item{
-  @media (min-width: 723px) and (max-width: 1008px) {
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-    text-align: center;
-  }
-}
+    .item {
+      @media (min-width: 723px) and (max-width: 1008px) {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        text-align: center;
+      }
+    }
     h1 {
       font-size: 60px;
       white-space: nowrap;
@@ -118,6 +118,27 @@
         cursor: pointer;
         border-radius: 5px;
         font-size: 500;
+      }
+    }
+    .imageCounainer {
+      @media (min-width: 1402px) and (max-width: 6402px) {
+        display: none;
+      }
+      @media (min-width: 728px) and (max-width: 1402px) {
+        display: none;
+      }
+      @media (max-width: 724px) {
+        top: 33rem;
+        right: 50px;
+       
+      }
+      img {
+        @media (max-width: 724px) {
+          display: block;
+          height: 30%;
+          width: 68%;
+          margin-left:15%
+        }
       }
     }
   }

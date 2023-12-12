@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Message from "../../images/chat-conversation-svgrepo-com.png";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import Github from "../../images/letter-s.png";
 
 export default function contactMe() {
   const formRef = useRef();
@@ -53,7 +54,7 @@ export default function contactMe() {
     >
       <motion.div className="textContainer" variants={variants}>
         <motion.h1 variants={variants}>
-          I can make your desiyer project
+          I can make your desired project
         </motion.h1>
         <motion.div className="item" variants={variants}>
  
@@ -82,6 +83,14 @@ export default function contactMe() {
             <input type="email" required placeholder="Email" name="email" />
             <textarea id="" rows={4} placeholder="Message" name="message" />
             <button>Send it to me </button>
+            <motion.div
+        className="imageCounainer"
+        variants={variants}
+        initial="initial"
+        animate="animate"
+      >
+        <img src={Github} alt="me" />
+      </motion.div>
             {error && "oops ! it seems something happened"}
             {succes && "i got your email"}
           </motion.form>
