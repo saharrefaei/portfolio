@@ -3,7 +3,7 @@ import "./parallax.scss";
 import { useRef } from "react";
 import planets from "../../images/planets.png";
 import sun from "../../images/sun.png";
-export default function parallax({ type }) {
+export default function parallax({ type , darkMode}) {
   const ref = useRef();
 
   const { scrollYProgress } = useScroll({
@@ -20,9 +20,9 @@ export default function parallax({ type }) {
       className="parallax"
       ref={ref}
       style={{
-        background: "linear-gradient(180deg,#111132,#c0c01d)",
-      }}
-    >
+        background: darkMode ? 'linear-gradient(180deg, #e6c1ff, #ac40ef)' : 'linear-gradient(180deg, #0c0c1d, #111132)',
+        color: darkMode ? 'black' : 'lightgray'
+      }}>
       <motion.h1 style={{ y: ytext }}>What I have done?</motion.h1>
       <motion.div className="mountains"></motion.div>
       <motion.div
