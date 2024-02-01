@@ -3,18 +3,27 @@ import { motion, useScroll, useSpring,useTransform } from "framer-motion";
 import pic1 from "../../images/portfolio2.png";
 import img2 from "../../images/portfolio3.png";
 import img3 from "../../images/portfolio1.png";
+import img4 from '../../images/connectWebsite.png'
 import { useRef } from "react";
 
 const items = [
   {
     id: 1,
+    title: "website of photography collection",
+    img: img4,
+    adress :"https://terave-ilk1.vercel.app/",
+    docs : "click and view the website below :" ,
+    gitHub:"https://github.com/saharrefaei"
+  },
+  {
+    id: 2,
     title: " controling services Dashboard",
     img: pic1,
     docs:"Service control panel and project control by organization people. Access to the site is determined according to the direction. With full functionality.",
     gitHub:"https://github.com/saharrefaei"
   },
   {
-    id: 2,
+    id: 3,
     title: "Admin Dashboard",
     img: img2,
     docs:"Control panel by the admin, the admin has full access to all products and users, as well as the ability to check profit and loss in the desired time frame.",
@@ -22,7 +31,7 @@ const items = [
 
   },
   {
-    id: 3,
+    id: 4,
     title: "e-commerce website",
     img: img3,
     docs:"Website introducing the company's products and services",
@@ -50,6 +59,7 @@ const items = [
             <motion.div className="textCountainer" style={{y: y }}>
               <h2>{item.title}</h2>
               <span>{item.docs}</span>
+              <a href={item.adress} >{item.adress}</a>
               <a href={item.gitHub}>
               <button>see on Github</button></a>
             </motion.div>

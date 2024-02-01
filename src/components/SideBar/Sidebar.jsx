@@ -24,7 +24,6 @@ export default function SideBar() {
       },
     },
   };
-console.log(open,'open');
   return (
     <motion.div className="SideBar" animate={open ? "open" : "closed"}>
       <motion.div className="background" variants={variants}>
