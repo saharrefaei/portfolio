@@ -9,7 +9,7 @@ import { useRef } from "react";
 const items = [
   {
     id: 1,
-    title: "website of photography collection",
+    title: "PhotoShoot studio",
     img: img4,
     adress :"https://terave-ilk1.vercel.app/",
     gitHub:"https://github.com/saharrefaei"
