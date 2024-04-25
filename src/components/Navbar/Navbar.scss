@@ -20,6 +20,9 @@
     padding-left: 10%;
     @media (min-width: 728px) and (max-width: 1402px) {
       justify-content: space-evenly;
+      .disable-animation {
+        animation: none !important;
+      }
   
          }
     @media (max-width: 768px) {

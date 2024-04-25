@@ -10,6 +10,9 @@
     width: 100%;
     padding: 10px;
     flex-direction: column;
+    .disable-animation {
+      animation: none !important;
+    }
   }
   .textContainer {
     flex: 1;
@@ -49,7 +52,7 @@
         text-align: center;
       }
       @media (max-width: 724px) {
-        font-size: 25px;
+        font-size: 15px;
       }
     }
     span {

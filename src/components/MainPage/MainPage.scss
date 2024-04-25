@@ -9,14 +9,16 @@
       display: flex;
       align-self: center;
       justify-content: center;
-
       margin-left: -18px;
+      .disable-animation {
+        animation: none !important;
+      }
     }
     @media (max-width: 724px) {
       display: flex;
       align-self: center;
       justify-content: center;
-      padding-top: 25%;
+      padding-top: -2%;
       margin-left: -18px;
     }
   }
@@ -134,7 +136,7 @@
       right: -10px;
     }
     @media (max-width: 724px) {
-      top: 30rem;
+      top: 26rem;
       right: 35px;
     }
     img {

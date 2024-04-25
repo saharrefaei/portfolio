@@ -6,6 +6,14 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  /* For mobile devices */
+@media (max-width: 768px) {
+  /* Disable animations */
+  .disable-animation {
+    animation: none !important;
+  }
+}
+
   h1 {
     font-size: 80px;
     margin-top: -30%;

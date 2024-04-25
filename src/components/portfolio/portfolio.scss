@@ -1,5 +1,12 @@
 .portfolio {
   position: relative;
+/* For mobile devices */
+@media (max-width: 768px) {
+  /* Disable animations */
+  .disable-animation {
+    animation: none !important;
+  }
+}
 
   .progress {
     position: sticky;
@@ -35,6 +42,8 @@
     @media (max-width: 724px) {
       height: 111%;
       padding-top: 43px;
+      animation: none !important;
+
     }
     .wrapper {
       max-width: 1000px;
