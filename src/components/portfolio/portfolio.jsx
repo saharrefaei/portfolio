@@ -12,14 +12,13 @@ const items = [
     title: "website of photography collection",
     img: img4,
     adress :"https://terave-ilk1.vercel.app/",
-    docs : "click and view the website below :" ,
     gitHub:"https://github.com/saharrefaei"
   },
   {
     id: 2,
     title: " controling services Dashboard",
     img: pic1,
-    docs:"Service control panel and project control by organization people. Access to the site is determined according to the direction. With full functionality.",
+    docs:"Service control panel and project control by organization people (CMS)",
     gitHub:"https://github.com/saharrefaei"
   },
   {

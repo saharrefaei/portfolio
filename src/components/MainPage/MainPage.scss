@@ -124,6 +124,18 @@
     color: #ffffff09;
     width: 50%;
     font-weight: bold;
+
+    @media (max-width: 768px) {
+      position: absolute;
+      font-size: 8vh;
+      bottom: 120px;
+      white-space: nowrap;
+      color: #ffffff09;
+      width: 100%;
+      font-weight: bold;
+    }
+
+
   }
   .imageCounainer {
     overflow: hidden;
