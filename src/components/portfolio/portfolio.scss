@@ -1,12 +1,6 @@
 .portfolio {
   position: relative;
-/* For mobile devices */
-@media (max-width: 768px) {
-  /* Disable animations */
-  .disable-animation {
-    animation: none !important;
-  }
-}
+
 
   .progress {
     position: sticky;

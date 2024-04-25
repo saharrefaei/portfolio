@@ -5,9 +5,10 @@
  font-weight: bold;
 }
 html {
-  // scroll-snap-type: y mandatory;
-  // scroll-behavior: smooth;
-  
+  @media (min-width: 768px) {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
 }
 
 
@@ -22,7 +23,8 @@ html {
 body {
   background-color: #0c0c1d;
   color: lightgray;
-  overflow-x: hidden;}
+  overflow-x: hidden;
+  }
 
   .togglebutton{
     display: flex;
