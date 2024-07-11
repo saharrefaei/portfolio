@@ -4,25 +4,62 @@ import pic1 from "../../images/portfolio2.png";
 import img2 from "../../images/portfolio3.png";
 import img3 from "../../images/portfolio1.png";
 import img4 from '../../images/connectWebsite.png'
+import img5 from "../../images/accuracy.png"
+import img6 from "../../images/matrix.png"
+import img7 from "../../images/matrix2.png"
+import img8 from "../../images/matrix3.png"
+
 import { useRef } from "react";
 
 const items = [
   {
     id: 1,
+    title: "Admission process",
+    img: img5,
+    docs:"Predicted applicants in different periods and optimized the admission process, increasing accuracy by 15% and reducing admission time by 17%",
+    gitHub: "https://github.com/saharrefaei/python_datascience",
+
+  },
+  {
+    id: 2,
+    title: "Breast cancer",
+    img: img6,
+    docs:"Prediction of cancer data with 99% accuracy. Using lazypredict and evaluating all algorithms.",
+    gitHub: "https://github.com/saharrefaei/python_datascience/blob/main/breast",
+
+  },
+  {
+    id: 3,
+    title: "heart attack",
+    img: img7,
+    docs:"The heart attack prediction project estimates the probability of heart attack based on people's symptoms.",
+    gitHub: "https://github.com/saharrefaei/python_datascience",
+
+  },
+  {
+    id: 4,
+    title: "Customer Clustering",
+    img: img8,
+    docs:"Customer segmentation project based on different product usage criteria.",
+    gitHub: "https://github.com/saharrefaei/python_datascience",
+
+  },
+  {
+    id: 5,
     title: "PhotoShoot studio",
     img: img4,
     adress :"https://terave-ilk1.vercel.app/",
     gitHub:"https://github.com/saharrefaei"
   },
   {
-    id: 2,
+    id: 6,
     title: " controling services Dashboard",
     img: pic1,
     docs:"Service control panel and project control by organization people (CMS)",
     gitHub:"https://github.com/saharrefaei"
   },
   {
-    id: 3,
+    id: 7,
     title: "Admin Dashboard",
     img: img2,
     docs:"Control panel by the admin, the admin has full access to all products and users, as well as the ability to check profit and loss in the desired time frame.",
@@ -30,7 +67,7 @@ const items = [
 
   },
   {
-    id: 4,
+    id: 8,
     title: "e-commerce website",
     img: img3,
     docs:"Website introducing the company's products and services",

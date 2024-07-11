@@ -44,7 +44,7 @@ export default function MainPage({darkMode}) {
           animate="animate"
         >
           <h2>Sahar Refaei Ghalibafan</h2>
-          <h1>Web developer</h1>
+          <h3>Data Science , ML Engineer and Software Developer</h3>
 
           <a className="scroll" href="#Services">
             Scroll down for more information
@@ -58,7 +58,7 @@ export default function MainPage({darkMode}) {
         animate="animate"
         className="slidingtext"
       >
-        web programmer
+        programmer
       </motion.div>
       <motion.div
         className="imageCounainer"
